@@ -25,10 +25,11 @@ public class Main {
         listOfStudent.add(student1);
         listOfStudent.add(student2);
         listOfStudent.add(student3);
+        System.out.println("Все оценки");
 
         for (Student a : listOfStudent) {
             for (Integer b : a.getGrades()) {
-//                System.out.println(b);
+               System.out.print(b + " ");
                 rait += b;
 
             }
@@ -36,6 +37,6 @@ public class Main {
 
         double rating = (rait / listOfStudent.size());
         University univer1 = new University("Bgu", rating, listOfStudent);
-        System.out.println("Рейтинг универа = " + univer1.getRating());
+        System.out.println("\nРейтинг универа = " + univer1.getRating());
     }
 }
